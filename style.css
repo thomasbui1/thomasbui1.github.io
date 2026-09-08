@@ -106,7 +106,7 @@ h2 {
   object-fit: cover;
   display: block;
   border-radius: 10px;
-  filter: sepia(1) contrast(25);
+  filter: grayscale(110%) brightness(50%) contrast(1.2);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   transition:
     filter 0.4s ease,
@@ -115,7 +115,7 @@ h2 {
 }
 
 .sidebar-img:hover {
-  filter: sepia(0) contrast(20);
+  filter: grayscale(0%) brightness(100%) contrast(1.1);
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
@@ -163,4 +163,86 @@ nav h1 {
 .nav-li a:hover {
   background: #270000;
   color: #ffab66;
+}
+
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+.portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.portfolio a:hover {
+  background: #000;
+  color: #fff;
+  transform: translateX(4px);
+}
+
+.portfolio a::after {
+  content: "→";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+.portfolio a:hover::after {
+  opacity: 1;
+}
+
+.portfolio-main {
+  display: block;
+  min-height: auto;
+}
+
+.portfolio-box {
+  background: #ffffff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.portfolio-box h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+#opspark a:hover {
+  background: #90ee90;
+  color: #000;
+}
+
+#khan a:hover {
+  background: #4a90e2;
+  color: #fff;
 }
