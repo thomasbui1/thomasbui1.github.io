@@ -27,22 +27,50 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
+    //toggleGrid();
     
 
     // TODO 2 - Create Platforms
-    createPlatform(0,400,250,50);
-
-
+    createPlatform(0,400,550,100, "rgb(77, 105, 83)");
+    createPlatform(100,0,65,255, "rgb(69, 106, 77)");
+    createPlatform(250,300,50,150, "rgb(69, 106, 77)");
+    createPlatform(250,0,50,150, "rgb(69, 106, 77)");
+    createPlatform(300,300,250,50, "rgb(69, 106, 77)");
+    createPlatform(450,200,100,150, "rgb(69, 106, 77)");
+    createPlatform(650,0,100,350, "rgb(69, 106, 77)");
+    createPlatform(300,300,250,150, "rgb(69, 106, 77)");
+    createPlatform(550,450,550,50, "rgb(69, 106, 77)");
+    createPlatform(750,300,150,50, "rgb(69, 106, 77)");
+    createPlatform(1000,400,150,100, "rgb(69, 106, 77)");
+    createPlatform(1100,300,50,100, "rgb(69, 106, 77)");
+    createPlatform(1100,0,50,200, "rgb(69, 106, 77)");
+    createPlatform(700,0,450,125, "rgb(69, 106, 77)");
+    createPlatform(1275,0,450,500, "rgb(69, 106, 77)");
+    createPlatform(1350,0,450,1035, "rgb(69, 106, 77)");
+    createPlatform(0,700,1350,100, "rgb(69, 106, 77)");
+    createPlatform(0,500,1025,35, "rgb(69, 106, 77)");
+    createPlatform(1175,500,65,20, "rgb(69, 106, 77)");
+    createPlatform(1000,500,25,100, "rgb(69, 106, 77)");
 
     // TODO 3 - Create Collectables
-    createCollectable("steve", 250, 700);
-    createCollectable("diamond", 450, 700, 0.5, 0.5);
-
+    createCollectable("catshock", 480, 155);
+    createCollectable("catstare", 580, 300);
+    createCollectable("catbleh", 680, 405);
+    createCollectable("catside", 780, 250);
+    createCollectable("catnerd", 1180, 450);
+    createCollectable("catmilk", 1180, 450);
+    createCollectable("catdrool", 360, 625);
     
-    // TODO 4 - Create Cannons
+    // TODO 4 - Create Cannons\
+    
+    
     createCannon("top", 120, 10, 150);
-    createCannon("bottom", 140, 10, 150);
+    createCannon("bottom", 140, 10, 145);
+    createCannon("right", 325, 1400, 50, 50);
+    createCannon("right", 100, 10, 100, 120);
+    createCannon("bottom", 740, 1200, 75, 30);
+    createCannon("left", 675, 1200, 50, 150);
+    
     
     
     //////////////////////////////////

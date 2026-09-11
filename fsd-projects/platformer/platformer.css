@@ -1,7 +1,7 @@
 body {
   margin: 0px;
 
-  background-color: #240000;
+  background-color: #2d6c52;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -9,14 +9,14 @@ body {
 }
 
 canvas {
-  background-image: url(https://cdnb.artstation.com/p/assets/images/images/064/216/587/large/saphyre-layer-7-violence-red-forest-without-v1.jpg?1687380234);
+  background-image: url(images/spin.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgb(33, 18, 18);
+  background-color: rgb(138, 255, 197);
   margin: 5px;
   border-radius: 40px;
-  border: 5px solid rgba(139, 20, 20, 0.375);
+  border: 5px solid rgba(64, 255, 0, 0.375);
 }
 
 img {

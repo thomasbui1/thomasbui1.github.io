@@ -97,9 +97,14 @@ let animationDetails = {};
 
 var collectableList = {
   database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  catshock: { image: "images/collectables/catshock.png" },
+  catstare: { image: "images/collectables/catstare.png" },
+  catbleh: { image: "images/collectables/catbleh.png" },
+  catside: { image: "images/collectables/catside.png" },
+  catnerd: { image: "images/collectables/catnerd.png" },
+  catmilk: { image: "images/collectables/catmilk.png" },
+  catdrool: { image: "images/collectables/catdrool.png" },
 };
