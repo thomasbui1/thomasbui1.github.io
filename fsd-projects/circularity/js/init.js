@@ -25,11 +25,12 @@ var init = function (window) {
 
         // TODO 2 : Create a function that draws a circle
         // draws the circles
-        function drawCircle() {
-            var circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-            physikz.addRandomVelocity(circle, canvas, 5, 5);
-            view.addChild(circle);
-            circles.push(circle);
+        function drawCircle(){
+            // Code to draw a circle
+            var circle = draw.randomCircleInArea(canvas, true, true, '#999', 2); // uses an existing draw function to draw a circle of random size, color and location within the canvas. It stores the output of that funct
+            physikz.addRandomVelocity(circle, canvas, 5, 5); //uses the physikz library to add a random velocity and direction to the circle
+            view.addChild(circle); //adds the circle as a child of view so that the circle appears on screen
+            circles.push(circle); //saves the circle to an array of circles by pushing it to the end of the array
         }
 
         Gamification.init({
