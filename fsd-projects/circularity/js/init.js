@@ -23,13 +23,23 @@ var init = function (window) {
         var circles = [];
 
 
-        // TODO 2 : Create a function that draws a circle 
+        // TODO 2 : Create a function that draws a circle
+        // draws the circles
         function drawCircle() {
             var circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
             physikz.addRandomVelocity(circle, canvas, 5, 5);
             view.addChild(circle);
             circles.push(circle);
         }
+
+        Gamification.init({
+            canvas: canvas,
+            view: view,
+            draw: draw,
+            physikz: physikz,
+            circles: circles,
+            game: game
+        });
 
 
         /*
@@ -42,7 +52,8 @@ var init = function (window) {
 
 
         // TODO 7 : Use a loop to create multiple circles
-        for (var i = 0; i <51; i++) {
+        //loops the creation for all circles created instead of individually
+        for (var i = 0; i <101; i++) {
             drawCircle();
         }
 
@@ -75,10 +86,13 @@ var init = function (window) {
             */
 
             // TODO 8 / TODO 9 : Iterate over the array
-            for (var i = 0; i < 51; i++) {
+            //loops the new positions for all circles created instead of individually
+            for (var i = 0; i < 101; i++) {
                 physikz.updatePosition(circles[i]);
                 game.checkCirclePosition(circles[i]);
             }
+
+            Gamification.update();
         }
     
         /* 
@@ -89,7 +103,7 @@ var init = function (window) {
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            var rightEdge = circle.x + circle.radius;
+            var rightEdge = circle.x + circle.radius;//calculates specific distance met for smoother transitions
             var leftEdge = circle.x - circle.radius;
 
             if (leftEdge > canvas.width ) {
@@ -99,7 +113,7 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            var bottomEdge = circle.y + circle.radius;
+            var bottomEdge = circle.y + circle.radius;//calculates specific distance met for smoother transitions
             var topEdge = circle.y - circle.radius;
 
             if (bottomEdge > canvas.height) {
