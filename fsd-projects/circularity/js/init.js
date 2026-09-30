@@ -33,6 +33,7 @@ var init = function (window) {
             circles.push(circle); //saves the circle to an array of circles by pushing it to the end of the array
         }
 
+        //turns website into game
         Gamification.init({
             canvas: canvas,
             view: view,
@@ -107,6 +108,7 @@ var init = function (window) {
             var rightEdge = circle.x + circle.radius;//calculates specific distance met for smoother transitions
             var leftEdge = circle.x - circle.radius;
 
+            //if it hits the right or left edge, it moves to the opposite side respectful to what the side it hits
             if (leftEdge > canvas.width ) {
                 circle.x = 0 - circle.radius;
             } else if (rightEdge < 0) {
