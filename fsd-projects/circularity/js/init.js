@@ -119,10 +119,10 @@ var init = function (window) {
             var bottomEdge = circle.y + circle.radius;//calculates specific distance met for smoother transitions
             var topEdge = circle.y - circle.radius;
 
-            if (bottomEdge > canvas.height) {
-                circle.y = 0 + circle.radius;
-            } else if (topEdge < 0) {
-                circle.y = canvas.height - circle.radius;
+            if (topEdge > canvas.height) {
+                circle.y = 0 - circle.radius;
+            } else if (bottomEdge < 0) {
+                circle.y = canvas.height + circle.radius;
             }
 
 
